@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: payments
-        image: ${IMAGE_NAME}
+        image: ${image_name}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3004
