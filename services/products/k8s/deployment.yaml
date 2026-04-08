@@ -9,6 +9,8 @@ spec:
   template:
     metadata: { labels: { app: products } }
     spec:
+      imagePullSecrets:
+      - name: jfrog-registry-secret
       containers:
       - name: products
         image: hiqodenew.jfrog.io/cicd-docker/new-app/products:v1
